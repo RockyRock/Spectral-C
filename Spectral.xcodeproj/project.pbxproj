@@ -1,0 +1,659 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A3D212F23F2ACE0005B4678 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A3D212E23F2ACE0005B4678 /* SDL2_ttf.framework */; };
+		1A3F09A123F35A0600A838D2 /* angelina.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1A3D213023F2B09F005B4678 /* angelina.ttf */; };
+		1A4E0CE323D21B1400C1AD3E /* sdl_icone.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 1A4E0CE223D21B1400C1AD3E /* sdl_icone.bmp */; };
+		1A5A506B2407373C00AF85DA /* libfmodstudio.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5A506A2407373C00AF85DA /* libfmodstudio.dylib */; };
+		1A5A506D2407374700AF85DA /* libfmodstudioL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5A506C2407374700AF85DA /* libfmodstudioL.dylib */; };
+		1A5A506E240737D100AF85DA /* libfmodstudio.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 1A5A506A2407373C00AF85DA /* libfmodstudio.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1A5A506F240737DD00AF85DA /* libfmodstudioL.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 1A5A506C2407374700AF85DA /* libfmodstudioL.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1A6C143123FFE7BC00AF5CFC /* libfmod.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6C143023FFE7BC00AF5CFC /* libfmod.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		1A6C143323FFE7C600AF5CFC /* libfmodL.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6C143223FFE7C600AF5CFC /* libfmodL.dylib */; settings = {ATTRIBUTES = (Required, ); }; };
+		1A6C143B23FFF24A00AF5CFC /* libfmod.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 1A6C143023FFE7BC00AF5CFC /* libfmod.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1A6C143D23FFF24C00AF5CFC /* libfmodL.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 1A6C143223FFE7C600AF5CFC /* libfmodL.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		1ADF755F23D61FE00087B88B /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ADF755E23D61FE00087B88B /* SDL2_image.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		1AE83B9E23C766C900CC0766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AE83B9D23C766C900CC0766 /* Assets.xcassets */; };
+		1AE83BA423C766C900CC0766 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 1AE83BA323C766C900CC0766 /* main.c */; };
+		1AE83BAF23C766CA00CC0766 /* SpectralTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE83BAE23C766CA00CC0766 /* SpectralTests.m */; };
+		1AE83BBA23C766CA00CC0766 /* SpectralUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE83BB923C766CA00CC0766 /* SpectralUITests.m */; };
+		1AF81EAC242FA85500980872 /* Guitar.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1AF81EAB242FA85500980872 /* Guitar.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AE83BAB23C766CA00CC0766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AE83B8C23C766C800CC0766 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AE83B9323C766C800CC0766;
+			remoteInfo = SDL;
+		};
+		1AE83BB623C766CA00CC0766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AE83B8C23C766C800CC0766 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AE83B9323C766C800CC0766;
+			remoteInfo = SDL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1A6C143C23FFF24A00AF5CFC /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1A5A506F240737DD00AF85DA /* libfmodstudioL.dylib in Embed Libraries */,
+				1A5A506E240737D100AF85DA /* libfmodstudio.dylib in Embed Libraries */,
+				1A6C143B23FFF24A00AF5CFC /* libfmod.dylib in Embed Libraries */,
+				1A6C143D23FFF24C00AF5CFC /* libfmodL.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1A3D212E23F2ACE0005B4678 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SDL2_ttf.framework; sourceTree = "<group>"; };
+		1A3D213023F2B09F005B4678 /* angelina.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = angelina.ttf; sourceTree = "<group>"; };
+		1A4E0CE223D21B1400C1AD3E /* sdl_icone.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = sdl_icone.bmp; sourceTree = "<group>"; };
+		1A5A506A2407373C00AF85DA /* libfmodstudio.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfmodstudio.dylib; sourceTree = "<group>"; };
+		1A5A506C2407374700AF85DA /* libfmodstudioL.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfmodstudioL.dylib; sourceTree = "<group>"; };
+		1A6C143023FFE7BC00AF5CFC /* libfmod.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfmod.dylib; sourceTree = "<group>"; };
+		1A6C143223FFE7C600AF5CFC /* libfmodL.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfmodL.dylib; sourceTree = "<group>"; };
+		1A6C143423FFEB6100AF5CFC /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
+		1A6C143523FFEB6900AF5CFC /* fmod_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_common.h; sourceTree = "<group>"; };
+		1A6C143623FFEB7000AF5CFC /* fmod_dsp_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp_effects.h; sourceTree = "<group>"; };
+		1A6C143723FFEB7800AF5CFC /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
+		1A6C143823FFEB8300AF5CFC /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
+		1A6C143923FFEB8E00AF5CFC /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
+		1A6C143A23FFEB9700AF5CFC /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
+		1ADF755E23D61FE00087B88B /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		1AE83B9423C766C800CC0766 /* Spectral.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spectral.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE83B9D23C766C900CC0766 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AE83BA223C766C900CC0766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AE83BA323C766C900CC0766 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		1AE83BAA23C766CA00CC0766 /* SpectralTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectralTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE83BAE23C766CA00CC0766 /* SpectralTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectralTests.m; sourceTree = "<group>"; };
+		1AE83BB023C766CA00CC0766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AE83BB523C766CA00CC0766 /* SpectralUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpectralUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AE83BB923C766CA00CC0766 /* SpectralUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpectralUITests.m; sourceTree = "<group>"; };
+		1AE83BBB23C766CA00CC0766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AF81EAB242FA85500980872 /* Guitar.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Guitar.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AE83B9123C766C800CC0766 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A6C143123FFE7BC00AF5CFC /* libfmod.dylib in Frameworks */,
+				1A5A506B2407373C00AF85DA /* libfmodstudio.dylib in Frameworks */,
+				1A6C143323FFE7C600AF5CFC /* libfmodL.dylib in Frameworks */,
+				1A5A506D2407374700AF85DA /* libfmodstudioL.dylib in Frameworks */,
+				1A3D212F23F2ACE0005B4678 /* SDL2_ttf.framework in Frameworks */,
+				1ADF755F23D61FE00087B88B /* SDL2_image.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE83BA723C766CA00CC0766 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE83BB223C766CA00CC0766 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A6C142F23FFE79800AF5CFC /* FMOD */ = {
+			isa = PBXGroup;
+			children = (
+				1A6C143A23FFEB9700AF5CFC /* fmod.h */,
+				1A6C143423FFEB6100AF5CFC /* fmod_codec.h */,
+				1A6C143923FFEB8E00AF5CFC /* fmod_output.h */,
+				1A6C143623FFEB7000AF5CFC /* fmod_dsp_effects.h */,
+				1A6C143523FFEB6900AF5CFC /* fmod_common.h */,
+				1A6C143823FFEB8300AF5CFC /* fmod_errors.h */,
+				1A6C143723FFEB7800AF5CFC /* fmod_dsp.h */,
+				1A6C143223FFE7C600AF5CFC /* libfmodL.dylib */,
+				1A6C143023FFE7BC00AF5CFC /* libfmod.dylib */,
+				1A5A506A2407373C00AF85DA /* libfmodstudio.dylib */,
+				1A5A506C2407374700AF85DA /* libfmodstudioL.dylib */,
+			);
+			name = FMOD;
+			sourceTree = "<group>";
+		};
+		1ADF755D23D61FE00087B88B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A6C142F23FFE79800AF5CFC /* FMOD */,
+				1ADF755E23D61FE00087B88B /* SDL2_image.framework */,
+				1A3D212E23F2ACE0005B4678 /* SDL2_ttf.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AE83B8B23C766C800CC0766 = {
+			isa = PBXGroup;
+			children = (
+				1AE83B9623C766C800CC0766 /* Spectral */,
+				1AE83BAD23C766CA00CC0766 /* SpectralTests */,
+				1AE83BB823C766CA00CC0766 /* SpectralUITests */,
+				1AE83B9523C766C800CC0766 /* Products */,
+				1ADF755D23D61FE00087B88B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1AE83B9523C766C800CC0766 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AE83B9423C766C800CC0766 /* Spectral.app */,
+				1AE83BAA23C766CA00CC0766 /* SpectralTests.xctest */,
+				1AE83BB523C766CA00CC0766 /* SpectralUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AE83B9623C766C800CC0766 /* Spectral */ = {
+			isa = PBXGroup;
+			children = (
+				1A3D213023F2B09F005B4678 /* angelina.ttf */,
+				1AE83B9D23C766C900CC0766 /* Assets.xcassets */,
+				1AE83BA223C766C900CC0766 /* Info.plist */,
+				1AE83BA323C766C900CC0766 /* main.c */,
+				1AF81EAB242FA85500980872 /* Guitar.mp3 */,
+				1A4E0CE223D21B1400C1AD3E /* sdl_icone.bmp */,
+			);
+			path = Spectral;
+			sourceTree = "<group>";
+		};
+		1AE83BAD23C766CA00CC0766 /* SpectralTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AE83BAE23C766CA00CC0766 /* SpectralTests.m */,
+				1AE83BB023C766CA00CC0766 /* Info.plist */,
+			);
+			path = SpectralTests;
+			sourceTree = "<group>";
+		};
+		1AE83BB823C766CA00CC0766 /* SpectralUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1AE83BB923C766CA00CC0766 /* SpectralUITests.m */,
+				1AE83BBB23C766CA00CC0766 /* Info.plist */,
+			);
+			path = SpectralUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AE83B9323C766C800CC0766 /* Spectral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AE83BBE23C766CA00CC0766 /* Build configuration list for PBXNativeTarget "Spectral" */;
+			buildPhases = (
+				1AE83B9023C766C800CC0766 /* Sources */,
+				1AE83B9123C766C800CC0766 /* Frameworks */,
+				1AE83B9223C766C800CC0766 /* Resources */,
+				1A6C143C23FFF24A00AF5CFC /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spectral;
+			productName = SDL;
+			productReference = 1AE83B9423C766C800CC0766 /* Spectral.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AE83BA923C766CA00CC0766 /* SpectralTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AE83BC123C766CA00CC0766 /* Build configuration list for PBXNativeTarget "SpectralTests" */;
+			buildPhases = (
+				1AE83BA623C766CA00CC0766 /* Sources */,
+				1AE83BA723C766CA00CC0766 /* Frameworks */,
+				1AE83BA823C766CA00CC0766 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AE83BAC23C766CA00CC0766 /* PBXTargetDependency */,
+			);
+			name = SpectralTests;
+			productName = SDLTests;
+			productReference = 1AE83BAA23C766CA00CC0766 /* SpectralTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1AE83BB423C766CA00CC0766 /* SpectralUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AE83BC423C766CA00CC0766 /* Build configuration list for PBXNativeTarget "SpectralUITests" */;
+			buildPhases = (
+				1AE83BB123C766CA00CC0766 /* Sources */,
+				1AE83BB223C766CA00CC0766 /* Frameworks */,
+				1AE83BB323C766CA00CC0766 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AE83BB723C766CA00CC0766 /* PBXTargetDependency */,
+			);
+			name = SpectralUITests;
+			productName = SDLUITests;
+			productReference = 1AE83BB523C766CA00CC0766 /* SpectralUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AE83B8C23C766C800CC0766 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = NO;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Romain GUICHERD";
+				TargetAttributes = {
+					1AE83B9323C766C800CC0766 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					1AE83BA923C766CA00CC0766 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 1AE83B9323C766C800CC0766;
+					};
+					1AE83BB423C766CA00CC0766 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 1AE83B9323C766C800CC0766;
+					};
+				};
+			};
+			buildConfigurationList = 1AE83B8F23C766C800CC0766 /* Build configuration list for PBXProject "Spectral" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AE83B8B23C766C800CC0766;
+			productRefGroup = 1AE83B9523C766C800CC0766 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AE83B9323C766C800CC0766 /* Spectral */,
+				1AE83BA923C766CA00CC0766 /* SpectralTests */,
+				1AE83BB423C766CA00CC0766 /* SpectralUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AE83B9223C766C800CC0766 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF81EAC242FA85500980872 /* Guitar.mp3 in Resources */,
+				1A3F09A123F35A0600A838D2 /* angelina.ttf in Resources */,
+				1A4E0CE323D21B1400C1AD3E /* sdl_icone.bmp in Resources */,
+				1AE83B9E23C766C900CC0766 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE83BA823C766CA00CC0766 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE83BB323C766CA00CC0766 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AE83B9023C766C800CC0766 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE83BA423C766C900CC0766 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE83BA623C766CA00CC0766 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE83BAF23C766CA00CC0766 /* SpectralTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AE83BB123C766CA00CC0766 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AE83BBA23C766CA00CC0766 /* SpectralUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AE83BAC23C766CA00CC0766 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AE83B9323C766C800CC0766 /* Spectral */;
+			targetProxy = 1AE83BAB23C766CA00CC0766 /* PBXContainerItemProxy */;
+		};
+		1AE83BB723C766CA00CC0766 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AE83B9323C766C800CC0766 /* Spectral */;
+			targetProxy = 1AE83BB623C766CA00CC0766 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1AE83BBC23C766CA00CC0766 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/frameworks/;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SDL2,
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1AE83BBD23C766CA00CC0766 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = /Library/frameworks/;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SDL2,
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1AE83BBF23C766CA00CC0766 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = /Library/Frameworks/SDL2_image.framework/Headers;
+				INFOPLIST_FILE = Spectral/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RG.Spectral;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1AE83BC023C766CA00CC0766 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = /Library/Frameworks/SDL2_image.framework/Headers;
+				INFOPLIST_FILE = Spectral/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RG.Spectral;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1AE83BC223C766CA00CC0766 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SDLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "RG.SDL-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spectral.app/Contents/MacOS/Spectral";
+			};
+			name = Debug;
+		};
+		1AE83BC323C766CA00CC0766 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SDLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "RG.SDL-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Spectral.app/Contents/MacOS/Spectral";
+			};
+			name = Release;
+		};
+		1AE83BC523C766CA00CC0766 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SDLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "RG.SDL-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SDL;
+			};
+			name = Debug;
+		};
+		1AE83BC623C766CA00CC0766 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SDLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "RG.SDL-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SDL;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AE83B8F23C766C800CC0766 /* Build configuration list for PBXProject "Spectral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE83BBC23C766CA00CC0766 /* Debug */,
+				1AE83BBD23C766CA00CC0766 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AE83BBE23C766CA00CC0766 /* Build configuration list for PBXNativeTarget "Spectral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE83BBF23C766CA00CC0766 /* Debug */,
+				1AE83BC023C766CA00CC0766 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AE83BC123C766CA00CC0766 /* Build configuration list for PBXNativeTarget "SpectralTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE83BC223C766CA00CC0766 /* Debug */,
+				1AE83BC323C766CA00CC0766 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AE83BC423C766CA00CC0766 /* Build configuration list for PBXNativeTarget "SpectralUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AE83BC523C766CA00CC0766 /* Debug */,
+				1AE83BC623C766CA00CC0766 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AE83B8C23C766C800CC0766 /* Project object */;
+}
