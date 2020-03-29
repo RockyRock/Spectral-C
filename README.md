@@ -4,4 +4,4 @@ This repository contains a project representing the spectrum of the sound in rea
 
 The spectrum is displayed on a 512x1024 window with a refreshing rate of 5ms. An example, of the spectrum obtained for a range played with a guitar is pictured below.
 
-<img src="Guitar_Spectral.png" height="50%" width="50%">
+<img src="Guitar_Spectral.png" height="100%" width="100%">
