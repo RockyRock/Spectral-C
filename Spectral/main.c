@@ -1,6 +1,6 @@
 //
 //  main.m
-//  Spectral TP to using FMOD, SDL2, SDL2_image and SDL2_ttf
+//  Spectral TP using FMOD, SDL2, SDL2_image and SDL2_ttf
 //
 //  Created by Romain GUICHERD on 09/01/2020.
 //  Copyright © 2020 Romain GUICHERD. All rights reserved.
@@ -9,7 +9,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <dirent.h>
 #include <SDL2/SDL.h>
 #include <SDL2_image/SDL_image.h>
 #include <SDL2_ttf/SDL_ttf.h>
@@ -30,12 +29,12 @@ typedef struct spect spect;
 // Prototype function setPixel
 void setPixel(SDL_Surface *surface, int x, int y, Uint32 pixel);
 
-// Function prototype update spectrum
+// Prototype function update spectrum
 Uint32 upSpectrum(Uint32 interval, void *parameter);
 
 int main(int argc, char *argv[]){
     
-    // Declare pointers and position variable
+    // Declare pointers and position variables
     SDL_Window *window = NULL;
     SDL_Surface *text = NULL;
     SDL_Rect position;
@@ -53,23 +52,6 @@ int main(int argc, char *argv[]){
     FMOD_BOOL state = 0;
     FMOD_RESULT result = FMOD_OK;
     FMOD_DSP *fftDSP = NULL;
-    
-    struct dirent *de;  // Pointer for directory entry
-
-    // opendir() returns a pointer of DIR type.
-    DIR *dr = opendir(".");
-
-    if (dr == NULL)  // opendir returns NULL if couldn't open directory
-    {
-      printf("Could not open current directory" );
-      return 0;
-    }
-
-    // for readdir()
-    while ((de = readdir(dr)) != NULL)
-          fprintf(stderr, "%s\n", de->d_name);
-
-    closedir(dr);
     
     // Initialize SDL2 and check for issues
     if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_TIMER) == -1){
@@ -100,7 +82,7 @@ int main(int argc, char *argv[]){
         fprintf(stderr, "Music file not found!!!\n");
     }
     
-    // FMOD load music metallica and check for issues
+    // FMOD load sound and check for issues
     result = FMOD_System_CreateSound(system, "Guitar.mp3", FMOD_2D | FMOD_CREATESTREAM, 0, &guitar);
     if (result != FMOD_OK){
         fprintf(stderr, "Issue loading sound!\n");
@@ -139,7 +121,7 @@ int main(int argc, char *argv[]){
         SDL_WINDOWPOS_UNDEFINED,           // initial y position
         1024,                              // width, in pixels
         512,                               // height, in pixels
-        SDL_WINDOW_OPENGL                  // flags - see below
+        SDL_WINDOW_OPENGL                  // flags
     );
 
     // Check that the window was successfully created
@@ -172,7 +154,7 @@ int main(int argc, char *argv[]){
         fprintf(stderr, "TTF_OpenFont: %s\n", TTF_GetError());
     }
     
-    // Create text surface with text spectral
+    // Create text surface with text Guitar
     text = TTF_RenderText_Blended(font, "Guitar", whiteColor);
 
     // Create SDL event to run
@@ -204,7 +186,7 @@ int main(int argc, char *argv[]){
                     FMOD_Channel_Stop(channel1);
                     break;
                 case SDLK_m:
-                    // FMOD play metallica music and check for issues
+                    // FMOD play sound and check for issues
                     result = FMOD_System_PlaySound(system, guitar, NULL, 0, &channel1);
                     if (result != FMOD_OK){
                     fprintf(stderr, "Issue in FMOD system play sound!\n");
@@ -218,7 +200,7 @@ int main(int argc, char *argv[]){
                         fprintf(stderr, "Error code: %u\n", result);
                         exit(EXIT_FAILURE);
                     }
-                    // Initialisation spectre
+                    // Initialization spectre
                     spect Spectre;
                     
                     // Store Spectre structure
