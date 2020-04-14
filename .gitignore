@@ -1,2 +1,5 @@
 # Git ignore file
 .DS_Store
+
+# Xcode
+UserInterfaceState.xcuserstate
